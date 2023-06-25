@@ -18,7 +18,13 @@ header {
   width: 100%;
   height: 60vh;
   background: #000000;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3019607843) 0%, rgba(0, 0, 0, 0.26) 35%, rgba(0, 0, 0, 0.4117647059) 100%), url(/assets/img/px-rings-cover-img.webp);
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.3019607843) 0%,
+      rgba(0, 0, 0, 0.26) 35%,
+      rgba(0, 0, 0, 0.4117647059) 100%
+    ),
+    url(../img/px-rings-cover-img.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -76,13 +82,6 @@ main .ring-col .ring-col-pricing a:hover {
   letter-spacing: 1px;
 }
 
-footer h5 {
-  color: #969696;
-  font-size: 14px;
-  margin-top: 50px;
-  text-align: center;
-}
-
 @media screen and (max-width: 1000px) {
   .wrapper {
     display: flex;
@@ -120,4 +119,4 @@ footer h5 {
     flex-direction: column;
     align-items: center;
   }
-}/*# sourceMappingURL=rings.css.map */
+} /*# sourceMappingURL=rings.css.map */
