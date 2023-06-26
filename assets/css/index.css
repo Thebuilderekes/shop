@@ -300,16 +300,18 @@ footer .quick-links a {
 footer .quick-links a:hover {
   text-decoration: underline;
 }
-footer h5 {
+footer .attributes {
+  margin-top: 50px;
+}
+footer .attributes h5 {
   color: #969696;
   font-size: 14px;
-  margin: 20px 0;
   text-align: center;
 }
-footer h5 a {
+footer .attributes h5 a {
   color: #f3d00b;
 }
-footer h5 a:hover {
+footer .attributes h5 a:hover {
   text-decoration: underline;
 }
 

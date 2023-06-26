@@ -356,18 +356,19 @@ footer {
       }
     }
   }
+  .attributes {
+    margin-top: 50px;
+    h5 {
+      color: #969696;
+      font-size: 14px;
+      text-align: center;
 
-  h5 {
-    color: #969696;
-    font-size: 14px;
-    margin: 20px 0;
-    text-align: center;
+      a {
+        color: #f3d00b;
 
-    a {
-      color: #f3d00b;
-
-      &:hover {
-        text-decoration: underline;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
