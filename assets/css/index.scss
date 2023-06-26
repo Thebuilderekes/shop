@@ -386,11 +386,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media (max-width: 414px) {
   header {
     .hero-text {
       h1 {
-        font-size: 45px;
+        font-size: 60px;
       }
 
       .btn {
@@ -406,7 +406,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
   a {
     text-decoration: none;
   }
