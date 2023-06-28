@@ -172,7 +172,7 @@ header .hero-text {
 }
 header .hero-text h1 {
   text-align: center;
-  color: rgb(255, 252, 52);
+  color: #fffc34;
   font-size: 60px;
   font-weight: 700;
   padding-bottom: 2%;
@@ -193,7 +193,7 @@ header .hero-text .btn .button {
   padding: 15px;
   display: flex;
   align-items: center;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid #ffffff;
   background: transparent;
   color: #ffffff;
   font-size: 20px;
@@ -369,7 +369,7 @@ footer .attributes h5 a:hover {
   }
   header .hero-text h1 {
     color: GOLD;
-    font-size: 28px;
+    font-size: 45px;
     font-weight: bold;
   }
   header .hero-text .btn {
@@ -379,7 +379,6 @@ footer .attributes h5 a:hover {
   header .hero-text .btn .button {
     display: flex;
     align-items: center;
-    margin: 3px 6px 0 0;
     padding: 7px;
     border: 2px solid white;
     background: transparent;
@@ -389,7 +388,6 @@ footer .attributes h5 a:hover {
   }
   header .hero-text .btn .button:hover {
     background-color: rgb(243, 208, 11);
-    transform: translateY(-5px);
     transition: all 500ms ease;
     color: #000000;
     font-family: "Lato", sans-serif;
@@ -422,7 +420,6 @@ footer .attributes h5 a:hover {
   }
   .collection-section a:hover {
     background-color: #ffffff;
-    transform: translateY(-5px);
     transition: all 500ms ease;
   }
   .jewelry h3 {
@@ -450,7 +447,6 @@ footer .attributes h5 a:hover {
     cursor: pointer;
   }
   footer {
-    background-color: #000000;
     padding: 0.5em 0 2em 0;
   }
   footer h2 {
@@ -506,7 +502,6 @@ footer .attributes h5 a:hover {
   }
   header .hero-text .btn .button:hover {
     background-color: rgb(243, 208, 11);
-    transform: translateY(-5px);
     transition: all 500ms ease;
     color: #000000;
   }
