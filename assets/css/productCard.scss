@@ -1,0 +1,30 @@
+.card {
+  margin: 1rem 0;
+  background-color: cornsilk;
+
+  .price-details {
+    padding: 1rem;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  a {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    transition: all 0.5s;
+
+    &:hover {
+      color: #030303;
+      background-color: #f3d00b;
+      letter-spacing: 1px;
+    }
+  }
+}
