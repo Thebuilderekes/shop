@@ -316,7 +316,7 @@ footer .attributes h5 a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .navbar > .container,
   .navbar > .container-fluid,
   .navbar > .container-lg,
@@ -326,22 +326,17 @@ footer .attributes h5 a:hover {
   .navbar > .container-xxl {
     padding: 10px;
   }
+  /*Header section */
+  header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  header .hero-text {
+    width: 80%;
+  }
 }
 @media (max-width: 414px) {
-  header .hero-text h1 {
-    font-size: 60px;
-  }
-  header .hero-text .btn .view-collection-btn {
-    margin-left: 16px;
-  }
-  header .hero-text .btn .button {
-    font-size: 16px;
-  }
-}
-@media (max-width: 375px) {
-  a {
-    text-decoration: none;
-  }
   /*Header section */
   header {
     position: relative;
@@ -374,22 +369,13 @@ footer .attributes h5 a:hover {
     font-weight: bold;
   }
   header .hero-text .btn {
-    gap: 20px;
+    gap: 3rem;
     margin-top: 20px;
   }
-  header .hero-text .btn .button {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    border: 2px solid white;
-    background: transparent;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  header .hero-text .btn .button:hover {
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
+}
+@media (max-width: 375px) {
+  a {
+    text-decoration: none;
   }
   h2 {
     font-weight: 700;
