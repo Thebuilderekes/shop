@@ -194,6 +194,7 @@ header .hero-text .btn .button {
   display: flex;
   align-items: center;
   border: 2px solid #ffffff;
+  border-radius: 5px;
   background: transparent;
   color: #ffffff;
   font-size: 20px;
@@ -379,7 +380,7 @@ footer .attributes h5 a:hover {
   header .hero-text .btn .button {
     display: flex;
     align-items: center;
-    padding: 7px;
+    padding: 10px 20px;
     border: 2px solid white;
     background: transparent;
     color: #ffffff;
@@ -387,10 +388,8 @@ footer .attributes h5 a:hover {
     font-weight: bold;
   }
   header .hero-text .btn .button:hover {
-    background-color: rgb(243, 208, 11);
-    transition: all 500ms ease;
-    color: #000000;
-    font-family: "Lato", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
   }
   h2 {
     font-weight: 700;
@@ -502,7 +501,6 @@ footer .attributes h5 a:hover {
   }
   header .hero-text .btn .button:hover {
     background-color: rgb(243, 208, 11);
-    transition: all 500ms ease;
     color: #000000;
   }
 }/*# sourceMappingURL=index.css.map */

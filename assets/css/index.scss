@@ -235,6 +235,7 @@ header {
         display: flex;
         align-items: center;
         border: 2px solid #ffffff;
+        border-radius: 5px;
         background: transparent;
         color: #ffffff;
         font-size: 20px;
@@ -462,7 +463,7 @@ footer {
         .button {
           display: flex;
           align-items: center;
-          padding: 7px;
+          padding: 10px 20px;
           border: 2px solid white;
           background: transparent;
           color: #ffffff;
@@ -470,11 +471,9 @@ footer {
           font-weight: bold;
 
           &:hover {
-            background-color: rgb(243, 208, 11);
-            transition: all 500ms ease;
-            color: #000000;
+            background-color: rgb(0, 0, 0);
 
-            font-family: "Lato", sans-serif;
+            color: #ffffff;
           }
         }
       }
@@ -618,7 +617,6 @@ footer {
 
           &:hover {
             background-color: rgb(243, 208, 11);
-            transition: all 500ms ease;
             color: #000000;
           }
         }

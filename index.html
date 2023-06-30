@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="We sell designer jewelry that is top quality at affordable prices. We sell rings, bracelets, earrings, and more."
+      content="Discover elegance and style at Luxe Gems, your premier destination for exquisite jewelry. Shop our stunning collection of rings, earrings, and bracelets, handcrafted to perfection. Find the perfect piece to enhance your beauty today!"
     />
-    <meta name="keywords" content="earrings, bracelets, rings, jewelry" />
-    <title>Home - Luxe Gems</title>
+    <meta name="keywords" content="ewelry store, Luxe Gems, rings, earrings, bracelets, exquisite jewelry, premier, wide selection, enhance style, make a statement, curated collection, craftsmanship, exceptional quality, diamond rings, pearl earrings, occasion, timeless elegance, exceptional beauty" />
+    <title>Luxe Gems - Home</title>
     <link
       rel="stylesheet"
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
     />
 
     <link rel="stylesheet" href="assets/css/index.css" />
-    <!-- <script src="./assets/js/menu.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+   
   </head>
   <body>
     <!-------------------------------  HEADER SECTION ---------------------------------------------->
@@ -81,8 +82,8 @@
         <!------------------ NAVIGATION ENDS ------------------------->
       </div>
       <section class="hero-text">
-        <h1>Elevate your style with exquisite jewelry</h1>
-        <div class="btn">
+        <h1 class="headline ">Elevate your style with exquisite jewelry</h1>
+        <div class="tagline btn">
           <a class="button call-us-btn" href="tel:+2348000404044">CALL US</a>
           <a class="button view-collection-btn" href="#collection">
             COLLECTION
@@ -94,10 +95,10 @@
     <!-------------------------------MAIN SECTION ------------------------------>
     <main>
       <div id="collection-wrapper">
-        <h2 id="collection"><strong>OUR COLLECTION</strong></h2>
+        <h2 class="tagline" id="collection"><strong>OUR COLLECTION</strong></h2>
         <section class="jewelry container">
           <div class="row">
-            <div class="rings product col-lg-4 col-sm-4 col-md-4">
+            <div class="tagline rings product col-lg-4 col-sm-4 col-md-4">
               <figure>
                 <a href="pages/rings.html"
                   ><img src="assets/img/ring-1.jpg" alt="ring"
@@ -106,7 +107,7 @@
               </figure>
               <p>Shop our range of Gold and Silver rings</p>
             </div>
-            <div class="earrings product col-lg-4 col-sm-4 col-md-4">
+            <div class="tagline earrings product col-lg-4 col-sm-4 col-md-4">
               <figure>
                 <a href="pages/earrings.html"
                   ><img src="assets/img/earring-1.jpg" alt="earrings"
@@ -116,7 +117,7 @@
               <p>Shop our range of Gold and Silver earrings</p>
             </div>
 
-            <div class="bracelets product col-lg-4 col-sm-4 col-md-4">
+            <div class="tagline bracelets product col-lg-4 col-sm-4 col-md-4">
               <figure>
                 <a href="pages/bracelets.html"
                   ><img src="assets/img/bracelet-1.jpg" alt=" bracelet "
@@ -132,7 +133,7 @@
 
     <!---------------- FOOTER SECTION ---------------------------->
     <footer class="footer" id="footer">
-      <div class="container">
+      <div class="tagline container">
         <h2>Luxe Gems</h2>
         <div class="row">
           <div class="location col-lg-6 col-sm-4 col-md-4">
@@ -147,7 +148,7 @@
             <a href="index.html">Home</a>
             <a href="#">About</a>
             <a href="./pages/rings.html">Rings</a>
-            <a href="./pages/bracelets.html">bracelets</a>
+            <a href="./pages/bracelets.html">Bracelets</a>
             <a href="./pages/earrings.html">Earrings</a>
           </nav>
 
@@ -166,14 +167,13 @@
         </div>
       </div>
 
-      <div class="attributes">
+      <div class=" tagline attributes">
         <h5>Luxe Gems &nbsp; Copyright 2023</h5>
         <h5>
           Designed and built by
           <a href="https://twitter.com/iamthebuilder__">The Builder</a>
         </h5>
       </div>
-    
     </footer>
 
     <!--------------------- SCRIPTS --------------------------------->
@@ -190,5 +190,11 @@
     ></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="./assets/js/navbar.js"></script>
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".headline");
+      ScrollReveal().reveal(".tagline", { delay: 500 });
+      ScrollReveal().reveal(".punchline", { delay: 2000 });
+    </script>
   </body>
 </html>

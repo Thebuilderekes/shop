@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link
       rel="stylesheet"
       href="../assets/vendor/bootstrap/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/css/about.css" />
-    <title>About</title>
+    <title>Luxe Gems - About</title>
   </head>
   <body>
     <header>
@@ -74,8 +75,8 @@
 
     <main>
       <section>
-        <h1>ABOUT</h1>
-        <p>
+        <h1 class="headline">ABOUT</h1>
+        <p class="tagline">
           Welcome to Luxe Gems, where elegance meets craftsmanship. We take pride in
           offering an extensive collection of exquisite rings, earrings, and
           bracelets that are meticulously curated to celebrate the beauty of
@@ -83,14 +84,14 @@
           effortlessly blend sophistication, style, and quality.
         </p>
         <br />
-        <p>
+        <p class="tagline">
           In our ring collection, you will discover a world of love and
           commitment. From classic solitaires to intricately detailed bands,
           each ring is designed to symbolize the everlasting bond between two
           souls.
         </p>
         <br />
-        <p>
+        <p class="tagline">
           Adorn your ears with elegance and grace from our stunning earring
           selection. From delicate studs to glamorous chandelier designs, our
           earrings are crafted to enhance your natural beauty and make a
@@ -98,7 +99,7 @@
           vibrant hues of gemstones.
         </p>
         <br />
-        <p>
+        <p class="tagline">
           Wrap your wrists in sophistication with our exquisite bracelet
           collection. From delicate chains to bold bangles, our bracelets are
           meticulously crafted to elevate your style. Discover the shimmer of
@@ -108,7 +109,7 @@
           art, adding a touch of elegance and refinement to any ensemble.
         </p>
         <br />
-        <p>
+        <p class="tagline">
           At Luxe Gems, we understand that selecting the perfect piece of
           jewelry is a personal experience. That's why our knowledgeable and
           friendly staff are here to assist you every step of the way. Whether
@@ -136,8 +137,8 @@
             <a href="/index.html">Home</a>
             <a href="./about.html">About</a>
             <a href="./rings.html">Rings</a>
+            <a href="./bracelets.html">Bracelets</a>
             <a href="./earrings.html">Earrings</a>
-            <a href="./bracelets.html">bracelets</a>
           </nav>
 
           <form class="form col-lg-3 col-sm-4 col-md-4">
@@ -175,6 +176,11 @@
     ></script>
     <script src="../assets/vendor/jquery.easing/jquery.easing.min.js"></script>
     <script src="../assets/js/navbar.js"></script>
-
+    <script>
+      ScrollReveal({ reset: true });
+      ScrollReveal().reveal(".headline");
+      ScrollReveal().reveal(".tagline", { delay: 500 });
+      ScrollReveal().reveal(".punchline", { delay: 2000 });
+    </script>
   </body>
 </html>
