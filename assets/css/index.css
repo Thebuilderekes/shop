@@ -326,15 +326,6 @@ footer .attributes h5 a:hover {
   .navbar > .container-xxl {
     padding: 10px;
   }
-  /*Header section */
-  header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  header .hero-text {
-    width: 80%;
-  }
 }
 @media (max-width: 414px) {
   /*Header section */
