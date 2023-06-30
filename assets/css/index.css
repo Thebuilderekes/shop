@@ -369,7 +369,7 @@ footer .attributes h5 a:hover {
     font-weight: bold;
   }
   header .hero-text .btn {
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 20px;
   }
 }
