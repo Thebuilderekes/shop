@@ -49,6 +49,21 @@
   /* Legacy iOS */
 }
 
+$large-fs: 3.75rem; /*60px*/
+$semi-large-fs: 1.875rem; /*30px*/
+$medium-fs: 1.5rem; /*24px*/
+$semi-medium-fs: 1.125rem; /*18px*/
+$default-fs: 1rem; /*16px*/
+$small-fs: 0.87rem; /*14px*/
+$smallest-fs: 0.75rem; /*12px*/
+/*==================Colors============================*/
+
+$grey: #f3efef;
+$soft-grey: #c9c9c9;
+$mid-black: #0f0f0f;
+$light-blue: #b4c7f3;
+$gold: #f3d00b;
+
 body {
   width: 100%;
   height: 100%;
@@ -132,133 +147,83 @@ img {
   row-gap: 3rem;
 }
 
-/*Header section */
-header {
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  background: linear-gradient(90deg, #000000d2 0%, #000000bb 100%, #000000 100%),
-    url(/assets/img/background-img.webp);
-  background-repeat: no-repeat;
-  background-position: center;
+/*======= Navigation Styles ==========*/
 
-  .main-header {
+.navbar {
+  background-color: $mid-black;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+nav ul li a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+nav ul li:last-child {
+  background-color: $soft-grey;
+  border-radius: 20px;
+}
+
+.nav-link-light {
+  color: $grey;
+}
+
+.nav-link.active {
+  color: $soft-grey !important;
+}
+.nav-link:hover {
+  color: $grey;
+}
+
+nav .nav-link {
+  font-size: $semi-medium-fs;
+  text-decoration: none;
+}
+
+/*====== 4. Hero section styles ================*/
+.hero-section {
+  font-weight: 700 !important;
+  font-style: normal;
+
+  .hero-section__img-background {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 
-    nav {
-      background-color: rgb(255, 255, 255);
-      position: fixed;
-      width: 100%;
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      border-bottom: 1px solid #d4d4d4;
-      padding: 0;
-
-      .visit-us {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: #1c1c1c;
-
-        p {
-          color: #ffffff;
-          text-align: center;
-          padding: 5px 0;
-          margin: 0;
-          font-size: 14px;
-          font-family: "Josefin Sans";
-
-          span {
-            color: GOLD;
-          }
-        }
-      }
-
-      .container-fluid {
-        padding: 0 1rem;
-        .navbar-brand {
-          font-family: "Lato", sans-serif;
-          text-decoration: none;
-          font-size: 16px;
-        }
-      }
-
-      .navbar-nav {
-        .nav-item {
-          .nav-link {
-            color: #000000;
-            text-transform: uppercase;
-            font-size: 14px;
-            padding: 20px 30px;
-
-            &:hover {
-              background-color: #1c1c1c;
-
-              color: #ffffff;
-            }
-          }
-        }
-      }
-    }
+    background-image: linear-gradient(
+        to bottom right,
+        #000 0%,
+        rgba(0, 0, 0, 0.5) 50%,
+        transparent 100%
+      ),
+      url("../img/back-img.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
 
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.hero-section__heading {
+  font-size: $semi-large-fs;
+  color: $gold;
+}
 
-    h1 {
-      text-align: center;
-      color: #fffc34;
-      font-size: 60px;
-      font-weight: 700;
-      padding-bottom: 2%;
-    }
-
-    .btn {
-      width: max-content;
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      gap: 2.5rem;
-
-      a:first-child {
-        background-color: #f3d00b;
-        color: #000000;
-      }
-
-      .button {
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        border: 2px solid #ffffff;
-        border-radius: 5px;
-        background: transparent;
-        color: #ffffff;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1;
-
-        &:hover {
-          background-color: #f3d00b;
-          border: 2px solid #f3d00b;
-          transition: all 500ms ease;
-          color: #1c1c1c;
-        }
-      }
-    }
+@media (min-width: 800px) {
+  .hero-section__heading {
+    font-size: $large-fs;
   }
 }
 
 h2 {
-  padding-top: 50px;
-  padding-bottom: 1%;
   text-align: center;
-  font-weight: 900;
-  font-size: 32px;
+  font-size: $semi-large-fs;
+}
+
+@media (min-width: 800px) {
+  h2 {
+    font-size: $large-fs;
+  }
 }
 
 .jewelry {
@@ -275,7 +240,7 @@ h2 {
     text-transform: uppercase;
 
     &:hover {
-      color: #f3d00b;
+      color: $gold;
     }
   }
 
@@ -324,8 +289,8 @@ h2 {
 }
 
 footer {
-  background-color: #1c1c1c;
-  padding: 1.6rem 1.6rem 0 1.6rem;
+  background-color: $mid-black;
+  padding: 3rem 1.6rem 0 1.6rem;
 
   h3 {
     color: #ffffff;
@@ -379,58 +344,6 @@ footer {
   .navbar > .container-xl,
   .navbar > .container-xxl {
     padding: 10px;
-  }
-}
-
-@media (max-width: 414px) {
-  /*Header section */
-  header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-    .main-header {
-      nav {
-        background-color: rgb(255, 255, 255);
-        position: fixed;
-        width: 100%;
-        z-index: 10;
-
-        .container-fluid {
-          padding: 0.5rem 10px;
-          .navbar-brand {
-            text-decoration: none;
-
-            font-weight: bold;
-          }
-        }
-
-        .navbar-nav {
-          .nav-item {
-            .nav-link {
-              color: #000000;
-              text-transform: uppercase;
-              font-size: 14px;
-              padding: 20px 0;
-              font-weight: 700;
-            }
-          }
-        }
-      }
-    }
-
-    .hero-text {
-      h1 {
-        color: GOLD;
-        font-size: 30px;
-        font-weight: bold;
-      }
-
-      .btn {
-        gap: 2rem;
-        margin-top: 20px;
-      }
-    }
   }
 }
 

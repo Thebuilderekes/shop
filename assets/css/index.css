@@ -25,6 +25,14 @@
   src: local(""), url("../fonts/josefin-sans-v24-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/josefin-sans-v24-latin-700.woff2") format("woff2"), url("../fonts/josefin-sans-v24-latin-700.woff") format("woff"), url("../fonts/josefin-sans-v24-latin-700.ttf") format("truetype"), url("../fonts/josefin-sans-v24-latin-700.svg#JosefinSans") format("svg");
   /* Legacy iOS */
 }
+/*60px*/
+/*30px*/
+/*24px*/
+/*18px*/
+/*16px*/
+/*14px*/
+/*12px*/
+/*==================Colors============================*/
 body {
   width: 100%;
   height: 100%;
@@ -106,116 +114,76 @@ img:hover {
   row-gap: 3rem;
 }
 
-/*Header section */
-header {
-  width: 100%;
-  height: 100%;
-  background: #000000;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8235294118) 0%, rgba(0, 0, 0, 0.7333333333) 100%, #000000 100%), url(/assets/img/background-img.webp);
-  background-repeat: no-repeat;
-  background-position: center;
+/*======= Navigation Styles ==========*/
+.navbar {
+  background-color: #0f0f0f;
 }
-header .main-header {
-  width: 100%;
-  height: 100vh;
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-header .main-header nav {
-  background-color: rgb(255, 255, 255);
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #d4d4d4;
-  padding: 0;
-}
-header .main-header nav .visit-us {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  background-color: #1c1c1c;
-}
-header .main-header nav .visit-us p {
-  color: #ffffff;
-  text-align: center;
-  padding: 5px 0;
-  margin: 0;
-  font-size: 14px;
-  font-family: "Josefin Sans";
-}
-header .main-header nav .visit-us p span {
-  color: GOLD;
-}
-header .main-header nav .container-fluid {
-  padding: 0 1rem;
-}
-header .main-header nav .container-fluid .navbar-brand {
-  font-family: "Lato", sans-serif;
+
+nav ul li a {
+  cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
-}
-header .main-header nav .navbar-nav .nav-item .nav-link {
-  color: #000000;
-  text-transform: uppercase;
-  font-size: 14px;
-  padding: 20px 30px;
-}
-header .main-header nav .navbar-nav .nav-item .nav-link:hover {
-  background-color: #1c1c1c;
-  color: #ffffff;
-}
-header .hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-header .hero-text h1 {
-  text-align: center;
-  color: #fffc34;
-  font-size: 60px;
-  font-weight: 700;
-  padding-bottom: 2%;
-}
-header .hero-text .btn {
-  width: -moz-max-content;
-  width: max-content;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-}
-header .hero-text .btn a:first-child {
-  background-color: #f3d00b;
-  color: #000000;
-}
-header .hero-text .btn .button {
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  border: 2px solid #ffffff;
-  border-radius: 5px;
-  background: transparent;
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1;
-}
-header .hero-text .btn .button:hover {
-  background-color: #f3d00b;
-  border: 2px solid #f3d00b;
-  transition: all 500ms ease;
-  color: #1c1c1c;
 }
 
+nav ul li:last-child {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
+
+.nav-link-light {
+  color: #f3efef;
+}
+
+.nav-link.active {
+  color: #c9c9c9 !important;
+}
+
+.nav-link:hover {
+  color: #f3efef;
+}
+
+nav .nav-link {
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+/*====== 4. Hero section styles ================*/
+.hero-section {
+  font-weight: 700 !important;
+  font-style: normal;
+}
+.hero-section .hero-section__img-background {
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%), url("../img/back-img.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-section__heading {
+  font-size: 1.875rem;
+  color: #f3d00b;
+}
+
+@media (min-width: 800px) {
+  .hero-section__heading {
+    font-size: 3.75rem;
+  }
+}
 h2 {
-  padding-top: 50px;
-  padding-bottom: 1%;
   text-align: center;
-  font-weight: 900;
-  font-size: 32px;
+  font-size: 1.875rem;
 }
 
+@media (min-width: 800px) {
+  h2 {
+    font-size: 3.75rem;
+  }
+}
 .jewelry {
   margin-top: 50px;
   margin-bottom: 100px;
@@ -273,8 +241,8 @@ h2 {
 }
 
 footer {
-  background-color: #1c1c1c;
-  padding: 1.6rem 1.6rem 0 1.6rem;
+  background-color: #0f0f0f;
+  padding: 3rem 1.6rem 0 1.6rem;
 }
 footer h3 {
   color: #ffffff;
@@ -321,43 +289,6 @@ footer .attributes h5 a:hover {
   .navbar > .container-xl,
   .navbar > .container-xxl {
     padding: 10px;
-  }
-}
-@media (max-width: 414px) {
-  /*Header section */
-  header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-  header .main-header nav {
-    background-color: rgb(255, 255, 255);
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-  }
-  header .main-header nav .container-fluid {
-    padding: 0.5rem 10px;
-  }
-  header .main-header nav .container-fluid .navbar-brand {
-    text-decoration: none;
-    font-weight: bold;
-  }
-  header .main-header nav .navbar-nav .nav-item .nav-link {
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 14px;
-    padding: 20px 0;
-    font-weight: 700;
-  }
-  header .hero-text h1 {
-    color: GOLD;
-    font-size: 30px;
-    font-weight: bold;
-  }
-  header .hero-text .btn {
-    gap: 2rem;
-    margin-top: 20px;
   }
 }
 @media (max-width: 375px) {

@@ -21,8 +21,13 @@ main {
     align-items: center;
     background-color: rgb(182, 182, 182);
     border-radius: 10px;
-    margin: 2rem;
-    padding: 1.5rem;
+    margin: 5rem 2rem 10rem 2rem;
+    padding: 3rem;
+
+    @media (max-width: 420px) {
+      margin: 2rem;
+      padding: 1rem;
+    }
 
     h1 {
       text-align: center;

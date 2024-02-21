@@ -17,7 +17,7 @@ html {
 
 header {
   width: 100%;
-  height: 60vh;
+  height: 30vh;
   background: #000000;
   background: linear-gradient(
       90deg,
@@ -28,9 +28,11 @@ header {
     url(../img/bracelet-cover.webp);
   background-repeat: no-repeat;
   background-position: center;
+}
 
-  .main-header {
-    width: 100%;
+@media (max-width: 420px) {
+  header {
+    height: 10vh;
   }
 }
 
