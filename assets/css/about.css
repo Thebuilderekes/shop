@@ -6,25 +6,21 @@ img {
   box-sizing: border-box;
 }
 
-body {
-  background-color: cornsilk;
-}
-
 header {
   background: none;
 }
 header .main-header {
   width: 100%;
-  height: 25vh;
-}
-@media (max-width: 414px) {
-  header .main-header {
-    height: 12vh;
-  }
 }
 
-main {
-  padding: 50px 20px;
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(182, 182, 182);
+  border-radius: 10px;
+  margin: 2rem;
+  padding: 1.5rem;
 }
 main section h1 {
   text-align: center;
@@ -32,6 +28,7 @@ main section h1 {
 }
 main section p {
   font-size: 20px;
+  width: 80%;
 }
 @media (max-width: 414px) {
   main section p {

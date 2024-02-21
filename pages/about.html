@@ -74,7 +74,7 @@
     </header>
 
     <main>
-      <section>
+      <section class="about-section">
         <h1 class="headline">ABOUT</h1>
         <p class="tagline">
           Welcome to Luxe Gems, where elegance meets craftsmanship. We take pride in
@@ -89,14 +89,6 @@
           commitment. From classic solitaires to intricately detailed bands,
           each ring is designed to symbolize the everlasting bond between two
           souls.
-        </p>
-        <br />
-        <p class="tagline">
-          Adorn your ears with elegance and grace from our stunning earring
-          selection. From delicate studs to glamorous chandelier designs, our
-          earrings are crafted to enhance your natural beauty and make a
-          statement. Explore the timeless allure of diamonds or embrace the
-          vibrant hues of gemstones.
         </p>
         <br />
         <p class="tagline">
@@ -122,47 +114,81 @@
 
     <!-------------------------------      FOOTER SECTION----------------------->
     <footer class="footer" id="footer">
-      <div class="container">
-        <h2>Luxe Gems</h2>
-        <div class="row">
-          <div class="location col-lg-6 col-sm-4 col-md-4">
-            <p>We are located at:</p>
-            <p>
-              No. 123 ox road <br />
-              Yenagoa, Bayelsa.
-            </p>
-            <p>Phone: +23480003030343</p>
-          </div>
-          <nav class="quick-links col-lg-3 col-sm-4 col-md-4">
-            <a href="/index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./rings.html">Rings</a>
-            <a href="./bracelets.html">Bracelets</a>
-            <a href="./earrings.html">Earrings</a>
-          </nav>
+			<div class="container">
+			  <div class="row">
+				<div class="location col-lg-6 col-sm-4 col-md-4">
+				  <dl>
+					<dt>
+					  <p>We are located at:</p>
+					</dt>
+					<dd>
+					  <p>
+						No. 123 ox road <br />
+						Yenagoa, Bayelsa.
+					  </p>
+					</dd>  
+				  </dl>
+				  <dl>
+					<dt>
+					  <p>Phone:</p> 
+					</dt>
+					<dd>   
+					   <p> +23480003030343</p>
+					</dd>
+				  </dl>
+				</div>
+				<div class="quick-links col-lg-3 col-sm-4 col-md-4">
+				  <h3 >Pages</h3>
+				  <nav>
+					<li>
+					  
+					  <a href="index.html">Home</a>
+					</li>
+					<li>
+					  <a href="#">About</a>
+					  
+					</li>
+					<li>
+					  
+					  <a href="./pages/rings.html">Rings</a>
+					</li>
+					<li>
+					  <a href="./pages/bracelets.html">Bracelets</a>
+	  
+					</li>
+					<li>
+					  <a href="./pages/earrings.html">Earrings</a>
+	  
+					</li>
+				  </nav>
+				</div>
+			  
+	  
+				<form class="form col-lg-3 col-sm-4 col-md-4">
+				  <p>Chat with us</p>
+				  <!-----iNSERT INPUT FORM HERE TO SUBSBSRIBE TO MAILING LIST---->
+				  <div class="social-links flex">
+					<a href="#"
+					  ><img src="/assets/img/whatsapp.svg" alt="whatsapp"
+					/></a>
+					<a href="#"
+					  ><img src="/assets/img/facebook.svg" alt="facebook"
+					/></a>
+				  </div>
+				</form>
+			  </div>
+			</div>
+	  
+			<div class=" tagline attributes">
+			  <h5>Luxe Gems &nbsp; Copyright 2021</h5>
+			  <h5>
+				Designed and built by
+				<a href="https://twitter.com/iamthebuilder__">The Builder</a>
+			  </h5>
+			</div>
+		  </footer>
 
-          <form class="form col-lg-3 col-sm-4 col-md-4">
-            <p>Chat with us</p>
-            <!-----iNSERT INPUT FORM HERE TO SUBSBSRIBE TO MAILING LIST---->
-            <div class="social-links flex">
-              <a href="#"
-                ><img src="/assets/img/whatsapp.svg" alt="whatsapp"
-              /></a>
-              <a href="#"
-                ><img src="/assets/img/facebook.svg" alt="facebook"
-              /></a>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="attributes">
-        <h5>Luxe Gems &nbsp; Copyright 2021</h5>
-        <h5>
-          Designed and built by
-          <a href="https://twitter.com/iamthebuilder__">The Builder</a>
-        </h5>
-      </div>
-    </footer>
+        <!-----SCRIPTS---->
     <script src="../assets/vendor/jquery/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

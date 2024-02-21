@@ -325,20 +325,15 @@ h2 {
 
 footer {
   background-color: #1c1c1c;
-  padding: 0.5em 0 0.5em 0;
+  padding: 1.6rem 1.6rem 0 1.6rem;
 
-  h2 {
+  h3 {
     color: #ffffff;
-    text-align: left;
   }
 
   p:first-child {
-    color: #f3d00b;
-    font-weight: 900;
-  }
-
-  p {
     color: #e4e4e4;
+    font-weight: 900;
   }
 
   .quick-links {
@@ -427,8 +422,7 @@ footer {
     .hero-text {
       h1 {
         color: GOLD;
-
-        font-size: 45px;
+        font-size: 30px;
         font-weight: bold;
       }
 
@@ -510,8 +504,6 @@ footer {
   }
 
   footer {
-    padding: 0.5em 0 2em 0;
-
     h2 {
       color: #ffffff;
       text-align: left;
