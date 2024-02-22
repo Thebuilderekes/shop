@@ -5,6 +5,13 @@
   .price-details {
     padding: 1rem;
   }
+  img {
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
 
   p {
     font-family: "Lato", sans-serif;

@@ -157,6 +157,7 @@ img {
 }
 
 nav ul li a {
+  text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
 }
@@ -189,7 +190,7 @@ nav .nav-link {
 
   .hero-section__img-background {
     width: 100%;
-    height: 80vh;
+    height: 90vh;
 
     background-image: linear-gradient(
         to bottom right,
@@ -202,11 +203,28 @@ nav .nav-link {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
-.hero-section__heading {
-  font-size: $semi-large-fs;
-  color: $gold;
+  .hero-section__heading {
+    font-size: $semi-large-fs;
+    color: $gold;
+  }
+  a.our-collection__link {
+    background-color: $grey;
+    color: $mid-black;
+  }
+  a.our-collection__link:hover {
+    background-color: $mid-black;
+    color: $gold;
+  }
+
+  a.contact-us__link {
+    background-color: $gold;
+    color: $mid-black;
+  }
+
+  a.contact-us__link:hover {
+    background-color: $grey;
+  }
 }
 
 @media (min-width: 800px) {
@@ -291,13 +309,14 @@ h2 {
 footer {
   background-color: $mid-black;
   padding: 3rem 1.6rem 0 1.6rem;
+  color: $grey;
 
   h3 {
-    color: #ffffff;
+    color: $grey;
   }
 
-  p:first-child {
-    color: #e4e4e4;
+  dt p:first-of-type {
+    color: $gold;
     font-weight: 900;
   }
 
@@ -381,7 +400,7 @@ footer {
       background-color: transparent;
 
       &:hover {
-        background-color: #ffffff;
+        background-color: $grey;
         transition: all 500ms ease;
       }
     }
@@ -417,11 +436,6 @@ footer {
   }
 
   footer {
-    h2 {
-      color: #ffffff;
-      text-align: left;
-    }
-
     p {
       color: #e4e4e4;
     }
@@ -432,63 +446,13 @@ footer {
 
       a {
         text-decoration: none;
-        color: #ffffff;
+        color: $grey;
         font-size: 14px;
         transition: all 1s;
         margin: 0.3em 0;
 
         &:hover {
           text-decoration: underline;
-        }
-      }
-    }
-
-    form {
-      p {
-        font-size: 20px;
-        text-transform: uppercase;
-      }
-
-      input {
-        width: 60%;
-        height: 40%;
-
-        label {
-          color: #ffffff;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 320px) {
-  header {
-    .hero-text {
-      h1 {
-        color: GOLD;
-
-        font-size: 24px;
-        font-weight: bold;
-      }
-
-      .btn {
-        //  position: absolute;
-        margin-top: 20px;
-
-        .button {
-          margin: 3px 6px 0 0;
-          padding: 7px;
-          border: 2px solid white;
-          //    border-radius: 10px;
-          background: transparent;
-          color: #ffffff;
-          font-size: 15px;
-          font-weight: bold;
-
-          &:hover {
-            background-color: rgb(243, 208, 11);
-            color: #000000;
-          }
         }
       }
     }

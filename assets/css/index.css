@@ -124,6 +124,7 @@ img:hover {
 }
 
 nav ul li a {
+  text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
 }
@@ -157,16 +158,30 @@ nav .nav-link {
 }
 .hero-section .hero-section__img-background {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: linear-gradient(to bottom right, #000 0%, rgba(0, 0, 0, 0.5) 50%, transparent 100%), url("../img/back-img.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-
-.hero-section__heading {
+.hero-section .hero-section__heading {
   font-size: 1.875rem;
   color: #f3d00b;
+}
+.hero-section a.our-collection__link {
+  background-color: #f3efef;
+  color: #0f0f0f;
+}
+.hero-section a.our-collection__link:hover {
+  background-color: #0f0f0f;
+  color: #f3d00b;
+}
+.hero-section a.contact-us__link {
+  background-color: #f3d00b;
+  color: #0f0f0f;
+}
+.hero-section a.contact-us__link:hover {
+  background-color: #f3efef;
 }
 
 @media (min-width: 800px) {
@@ -243,12 +258,13 @@ h2 {
 footer {
   background-color: #0f0f0f;
   padding: 3rem 1.6rem 0 1.6rem;
+  color: #f3efef;
 }
 footer h3 {
-  color: #ffffff;
+  color: #f3efef;
 }
-footer p:first-child {
-  color: #e4e4e4;
+footer dt p:first-of-type {
+  color: #f3d00b;
   font-weight: 900;
 }
 footer .quick-links {
@@ -322,7 +338,7 @@ footer .attributes h5 a:hover {
     background-color: transparent;
   }
   .collection-section a:hover {
-    background-color: #ffffff;
+    background-color: #f3efef;
     transition: all 500ms ease;
   }
   .jewelry h3 {
@@ -349,10 +365,6 @@ footer .attributes h5 a:hover {
     margin: 0 20px;
     cursor: pointer;
   }
-  footer h2 {
-    color: #ffffff;
-    text-align: left;
-  }
   footer p {
     color: #e4e4e4;
   }
@@ -362,46 +374,12 @@ footer .attributes h5 a:hover {
   }
   footer .quick-links a {
     text-decoration: none;
-    color: #ffffff;
+    color: #f3efef;
     font-size: 14px;
     transition: all 1s;
     margin: 0.3em 0;
   }
   footer .quick-links a:hover {
     text-decoration: underline;
-  }
-  footer form p {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-  footer form input {
-    width: 60%;
-    height: 40%;
-  }
-  footer form input label {
-    color: #ffffff;
-  }
-}
-@media screen and (max-width: 320px) {
-  header .hero-text h1 {
-    color: GOLD;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  header .hero-text .btn {
-    margin-top: 20px;
-  }
-  header .hero-text .btn .button {
-    margin: 3px 6px 0 0;
-    padding: 7px;
-    border: 2px solid white;
-    background: transparent;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  header .hero-text .btn .button:hover {
-    background-color: rgb(243, 208, 11);
-    color: #000000;
   }
 }/*# sourceMappingURL=index.css.map */

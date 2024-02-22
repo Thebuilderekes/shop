@@ -43,6 +43,11 @@ main .wrapper {
     justify-content: space-evenly;
   }
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+    flex-basis: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
