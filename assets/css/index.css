@@ -164,8 +164,8 @@ nav .nav-link {
   background-position: center;
   background-repeat: no-repeat;
 }
-.hero-section .hero-section__heading {
-  font-size: 1.875rem;
+.hero-section .hero-section__h1 {
+  font-size: 3.75rem;
   color: #f3d00b;
 }
 .hero-section a.our-collection__link {
@@ -185,8 +185,13 @@ nav .nav-link {
 }
 
 @media (min-width: 800px) {
-  .hero-section__heading {
+  .hero-section__h1 {
     font-size: 3.75rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero-section__h1 {
+    font-size: 1.875rem;
   }
 }
 h2 {
@@ -194,9 +199,9 @@ h2 {
   font-size: 1.875rem;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 500px) {
   h2 {
-    font-size: 3.75rem;
+    font-size: 1.875rem;
   }
 }
 .jewelry {

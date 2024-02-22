@@ -204,10 +204,11 @@ nav .nav-link {
     background-repeat: no-repeat;
   }
 
-  .hero-section__heading {
-    font-size: $semi-large-fs;
+  .hero-section__h1 {
+    font-size: $large-fs;
     color: $gold;
   }
+
   a.our-collection__link {
     background-color: $grey;
     color: $mid-black;
@@ -228,8 +229,14 @@ nav .nav-link {
 }
 
 @media (min-width: 800px) {
-  .hero-section__heading {
+  .hero-section__h1 {
     font-size: $large-fs;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section__h1 {
+    font-size: $semi-large-fs;
   }
 }
 
@@ -238,9 +245,9 @@ h2 {
   font-size: $semi-large-fs;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 500px) {
   h2 {
-    font-size: $large-fs;
+    font-size: $semi-large-fs;
   }
 }
 
