@@ -134,6 +134,10 @@ nav ul li:last-child {
   border-radius: 20px;
 }
 
+nav ul li:last-child:hover {
+  background-color: #f3d00b;
+}
+
 .nav-link-light {
   color: #f3efef;
 }
@@ -293,6 +297,7 @@ footer .attributes h5 {
   color: #969696;
   font-size: 14px;
   text-align: center;
+  padding: 0.4rem 0;
   margin-bottom: 0 !important;
 }
 footer .attributes h5 a {

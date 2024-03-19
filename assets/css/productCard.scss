@@ -22,7 +22,6 @@
   a {
     text-decoration: none;
     border: 1px solid black;
-    border-radius: 15px;
     padding: 5px 10px;
     color: black;
     font-family: "Lato", sans-serif;
@@ -31,7 +30,6 @@
     &:hover {
       color: #030303;
       background-color: #f3d00b;
-      letter-spacing: 1px;
     }
   }
 }
