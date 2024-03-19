@@ -293,6 +293,7 @@ footer .attributes h5 {
   color: #969696;
   font-size: 14px;
   text-align: center;
+  margin-bottom: 0 !important;
 }
 footer .attributes h5 a {
   color: #f3d00b;
