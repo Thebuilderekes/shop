@@ -1,18 +1,5 @@
 :root {
-  --fs-mega-large: 5rem;
-  --fs-extra-large: 4rem;
-  --fs-large: 3rem;
-  --fs-semilarge: 2rem;
-  --fs-medium: 1.5rem;
-  --fs-semimedium: 1.125rem;
-  --fs-normal: 1rem;
   /*==================SPACING ============================*/
-  --small-spacing: 10px;
-  --medium-spacing: 20px;
-  --large-spacing: 50px;
-  --extra-large-spacing: 100px;
   /*==================COLORS============================*/
-  --primary-color: #000000;
-  --secondary-color: #1c1c1c;
-  --accent-color: #f3d00b;
-}/*# sourceMappingURL=variables.css.map */
+}
+/*# sourceMappingURL=variables.css.map */

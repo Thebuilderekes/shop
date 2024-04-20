@@ -169,8 +169,6 @@ nav ul li:last-child {
 
 nav ul li:last-child:hover {
   background-color: $gold;
-
-  
 }
 
 .nav-link-light {
@@ -298,7 +296,6 @@ h2 {
 
     p {
       text-align: center;
-      color: #000000;
     }
   }
 
@@ -337,15 +334,19 @@ footer {
     display: flex;
     flex-direction: column;
 
-    a {
-      text-decoration: none;
-      color: #e4e4e4;
-      font-size: 14px;
-      transition: all 1s;
-      margin: 0.3em 0;
+    li {
+      padding: 0.5rem 0;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #e4e4e4;
+        font-size: 14px;
 
-      &:hover {
-        text-decoration: underline;
+        transition: all 1s;
+
+        &:hover {
+          color: $light-blue;
+        }
       }
     }
   }
@@ -471,7 +472,5 @@ footer {
         }
       }
     }
-
-   
   }
 }
