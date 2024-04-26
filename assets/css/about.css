@@ -39,5 +39,8 @@ main section p {
 @media (max-width: 414px) {
   main section p {
     font-size: 16px;
+    width: 100%;
   }
-}/*# sourceMappingURL=about.css.map */
+}
+
+/*# sourceMappingURL=about.css.map */
